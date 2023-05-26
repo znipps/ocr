@@ -216,8 +216,8 @@ def run(
 
 def parse_opt():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--weights', nargs='+', type=str, default=r'yolo\weights/best.pt', help='model path(s)')
-    parser.add_argument('--source', type=str, default=r'C:\Users\86137\Desktop\pic', help='file/dir/URL/glob, 0 for webcam')
+    parser.add_argument('--weights', nargs='+', type=str, default=r'yolo/weights/best.pt', help='model path(s)')
+    parser.add_argument('--source', type=str, default=r'/content/img/', help='file/dir/URL/glob, 0 for webcam')
     parser.add_argument('--data', type=str, default=ROOT / 'yolo/point.yaml', help='(optional) dataset.yaml path')
     parser.add_argument('--device', default='0', help='0 r cpu')
 
