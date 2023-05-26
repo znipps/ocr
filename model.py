@@ -13,10 +13,10 @@ from math import atan, degrees
 class  OcrHandle(object):
     def __init__(self):
         self.args = utility.parse_args()
-        self.args.cls_model_dir = r'.\recognize\ch_ppocr_mobile_v2.0_cls_infer/'
-        self.args.rec_model_dir = r".\recognize\ch_PP-OCRv3_rec_infer/"   #路径，关gpu
+        self.args.cls_model_dir = r'./recognize/ch_ppocr_mobile_v2.0_cls_infer/'
+        self.args.rec_model_dir = r"./recognize/ch_PP-OCRv3_rec_infer/"   #路径，关gpu
         # self.args.rec_model_dir = r".\recognize\ch_ppocr_server_v2.0_rec_infer/"  # 路径，关gpu
-        self.args.det_model_dir = r'.\recognize\ch_PP-OCRv3_det_infer/'
+        self.args.det_model_dir = r'./recognize/ch_PP-OCRv3_det_infer/'
         self.args.use_gpu = True
         self.text_classifier = predict_cla.TextClassifier(self.args)
         self.text_recognizer = predict_rec.TextRecognizer(self.args)
